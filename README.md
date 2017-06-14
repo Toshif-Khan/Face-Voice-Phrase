@@ -1,15 +1,20 @@
-# Face-and-voice-registration-and-indentification.
+# Face-Voice-Phrase
 
-It is a full project of two level authentication with speak guidance. In this project we can register a face and voice of a new user and as well can identify face and voice also.
+In this project we are doing a three level authentication process. The level of authentication as follows : 
 
-First of all when user came to us we will open a web cam then capture speak user to capture his/her face, after capturing image we have two option 
+1) In this level we will Identify the face of user. If we found an known face then after we will go for second level 
 
-1) Either he/she already registered his/her face or 
-2) The user is new(not registered yet) for us.
+2) In this level of authentication we will authenticate user by his/her voice. User will give his voice through microphone then we will      get a known voice then we will match the identity of Voice with the identity of Face, If we found the same identity for both means the    face and voice is given by the same person then only we will go for third level
 
-If he/she already registered his/her face then we will go for voice identification after voice identification we will match both face and voice identity, if we found same identity then we allow his/her to access his/her transaction otherwise we request user to give the same voice identity as face identity.
+3) In this last level of authentication we will authenticate user by his/her phrase (Phrase is like a unique statement which is registered    with your voice only), If we found a valid phrase then only we will complete authentication. The main thing about this level is that we
+   we will only verify phrase by your voice only. It means that if someone comes and speak your phrase then we will not verify it, because    it is not your voice. And one thing also, If you came and speak another phrase then we will again not verify it, because it is not your
+   right phrase. 
+   
+   Is it not cool huhh!!!
+   
+   Means as of now your transaction is more and more secure no one can theft your identity.
 
-If user is not registered yet then we will redirect user to registeration for his/her face and voice. Here we request user to enter his/her name then we will create his/her profile in our database(AccountDetails). After that we will request user to capture his/her photo which is clear and should be with proper face rectangle, user need to be capture atleast three photos and then we will register these photos with out person group. Then after we will request user to record his/her voice for voice registeration. Here we recommand user to speak clearly atleast 5 second or more. After all this things happened, Now user is ready to use his/her face and voice for next time transaction process.
+
 
 This is all.
 
